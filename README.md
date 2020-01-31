@@ -25,7 +25,7 @@
 |------|----|-------|
 |name|string|null: false|
 ### Association
-- has_many :massages
+- has_many :messages
 - has_many :users, through: :groups_user 
 - has_many :groups_users
 
