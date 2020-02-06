@@ -1,0 +1,25 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__user_name
+        mao
+      %ul.side-header__box__icon
+        %li.side-header__box__edit-user
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.side-header__box__new-group
+          = link_to "#" do
+            = icon('fas', 'cog')
+  .side-group
+    .side-group__box
+      = link_to "#", class:"group" do
+        %p.side-group__name
+          mao
+        %p.side-group__message
+          試験段階の物です
+    .side-group__box
+      = link_to "#", class:"group" do
+        %p.side-group__name
+          yamamoto
+        %p.side-group__message
+          試験段階の物ですパート２
