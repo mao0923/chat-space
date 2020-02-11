@@ -66,6 +66,7 @@
       padding-top: 35px;
       font-size: 20px;
       color: #333333;
+      text-align: left;
     }
     ul {
       display: flex;
@@ -112,47 +113,44 @@
       padding-bottom: 46px;
     }
   }
-  .main-form {
-    background-color: #d2d2d2;
+  .form {
+    background-color: #ddd;
     height: 90px;
     padding: 20px 40px;
-    display: flex;
-    &__box {
+    .new_message {
+      display: flex;
+    }
+    .input-message {
+      position: relative;
       display: flex;
       width: 100%;
-      &__input {
-        background-color: white;
+      .form__message {
         height: 50px;
-        width: 100%;
-        display: flex;
+        width: 100%;  
+        padding: 0 10px;
+        border-style: none;
         position: relative;
-        .main-form__box-text {
-          height: 50px;
-          width: 100%;  
-          padding: 0 10px;
-        }
-        .main-form__box__picture {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          font-size: 1.3em;
-          .main-form__box__picture-file {
-            display: none;
-          }
+      }
+      .form__mask__image {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.3rem;
+        .hidden {
+          display: none;
         }
       }
     }
+
   }
-  .main-form-send {
+  .form__submit {
     background-color: #38aef0;
     width: 100px;
     height: 50px;
     margin-left: 15px;
     text-align: center;
-    a {
-      color: white;
-      text-decoration: none;
-      line-height: 50px;
-    }
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
   }
 }
